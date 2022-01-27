@@ -72,7 +72,7 @@
 }
 
 /*560*/
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 480px) {
   .projects_body {
     width: 100%;
     height: 100vh;
@@ -109,10 +109,10 @@
 }
 
 /*780*/
-@media screen and (max-width: 780px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .projects_body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
 
   .projects_header {
@@ -127,26 +127,57 @@
   }
   .image img {
     display: block;
-    height: 150px;
-    width: 300px;
+    height: 250px;
+    width: 450px;
     cursor: pointer;
     border: 3px solid red;
     border-radius: 12px;
   }
   .img_line1 {
     display: flex;
+    flex-direction: column;
     gap: 20px;
   }
   .img_line2 {
     display: flex;
+    flex-direction: column;
     gap: 20px;
   }
 }
 
 /*1024*/
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .projects_body {
     width: 100%;
     height: 100%;
+  }
+
+  .projects_header {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    position: relative;
+  }
+  .image img {
+    display: block;
+    height: 260px;
+    width: 480px;
+    cursor: pointer;
+    border: 3px solid red;
+    border-radius: 12px;
+  }
+  .img_line1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .img_line2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }
