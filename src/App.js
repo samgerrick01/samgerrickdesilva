@@ -15,7 +15,11 @@ function App() {
             <Route path="/" exact element={<Home darkMode={darkMode} />} />
             <Route path="/projects" exact element={<Projects />} />
             <Route path="/blogs" exact element={<Blogs />} />
-            <Route path="/contact" exact element={<Contact />} />
+            <Route
+              path="/contact"
+              exact
+              element={<Contact darkMode={darkMode} />}
+            />
           </Routes>
         </div>
       </div>

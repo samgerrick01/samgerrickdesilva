@@ -1,13 +1,30 @@
 import React, { useState } from "react";
 import dark from "../../img/SGDS.png";
 import light from "../../img/SGDS_L.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import "./navbar.css";
 
 const Navbar = ({ setDarkMode, darkMode }) => {
   //STATE
   const [toggle, setToggle] = useState(false);
+  const navigate = useNavigate();
+
+  //EVENTS
+  const handleContact = () => {
+    navigate("/contact");
+    setToggle(false);
+  };
+
+  const handleBlogs = () => {
+    navigate("/blogs");
+    setToggle(false);
+  };
+
+  const handleProjects = () => {
+    navigate("/Projects");
+    setToggle(false);
+  };
 
   return (
     <div className={darkMode ? "navbar_d" : "navbar_l"}>
@@ -65,24 +82,21 @@ const Navbar = ({ setDarkMode, darkMode }) => {
           )}
           {toggle && (
             <div className="navbar-menu__container scale-up-center">
-              <div className="navbar-menu__links">
-                <Link to="/projects">
-                  <p>Projects</p>
-                </Link>
+              <div
+                className={
+                  darkMode ? "navbar-menu__links" : "navbar-menu__links_light"
+                }
+              >
+                <p onClick={handleProjects}>Projects</p>
 
-                <Link to="/blogs">
-                  <p>Blogs</p>
-                </Link>
+                <p onClick={handleBlogs}>Blogs</p>
 
                 <p>
                   <a href="https://github.com/samgerrick01" target="blank">
                     GitHub
                   </a>
                 </p>
-
-                <Link to="/contact">
-                  <p>Contact</p>
-                </Link>
+                <p onClick={handleContact}>Contact</p>
               </div>
             </div>
           )}

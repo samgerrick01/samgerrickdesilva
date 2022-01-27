@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import photo from "../../img/photo.png";
+import picko from "../../img/photo.png";
 
 const Home = ({ darkMode }) => {
   return (
@@ -8,7 +8,7 @@ const Home = ({ darkMode }) => {
       <div className={darkMode ? "homeContainer_dark" : "homeContainer_light"}>
         <h1>Hello, I'm a Web Developer</h1>
         <div className="homeContent">
-          <img src={photo} alt="photo" />
+          <img src={picko} alt="picko" />
           <div className="homeContent__name">
             <h1>Sam Gerrick C. De Silva</h1>
             <h3>React.JS Web Developer</h3>
