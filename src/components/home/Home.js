@@ -16,7 +16,9 @@ const Home = ({ darkMode }) => {
       <div className="col2">
         <label>Hello, I'm</label>
         <div className="firstName">SAM GERRICK</div>
-        <div className="lastName">DE SILVA</div>
+        <div className="lastName">
+          <span>DE SILVA</span>
+        </div>
         <div className="sam_title">Web Developer</div>
       </div>
     </div>
