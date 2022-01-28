@@ -5,20 +5,19 @@ import picko from "../../img/photo.png";
 const Home = ({ darkMode }) => {
   return (
     <div className={darkMode ? "homeBody_dark" : "homeBody_light"}>
-      <div className={darkMode ? "homeContainer_dark" : "homeContainer_light"}>
-        <h1>Hello, I'm a Web Developer</h1>
-        <div className="homeContent">
-          <img src={picko} alt="picko" />
-          <div className="homeContent__name">
-            <h1>Sam Gerrick C. De Silva</h1>
-            <h3>React.JS Web Developer</h3>
-          </div>
-        </div>
-        <h4>
+      <div className="col1">
+        <img className="picko" src={picko} alt="picko" />
+        <h3 style={{ textAlign: "center" }}>
           I’m a web developer from Batangas Philippines. I love building
           reactive and responsive website using the latest technologies
           available to deliver awesome experience to the user.
-        </h4>
+        </h3>
+      </div>
+      <div className="col2">
+        <label>Hello, I'm</label>
+        <div className="firstName">SAM GERRICK</div>
+        <div className="lastName">DE SILVA</div>
+        <div className="sam_title">Web Developer</div>
       </div>
     </div>
   );
