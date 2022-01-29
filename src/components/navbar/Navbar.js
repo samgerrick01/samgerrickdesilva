@@ -26,6 +26,11 @@ const Navbar = ({ setDarkMode, darkMode }) => {
     setToggle(false);
   };
 
+  const handleAbout = () => {
+    navigate("/About");
+    setToggle(false);
+  };
+
   return (
     <div className={darkMode ? "navbar_d" : "navbar_l"}>
       <div className="navbar-links">
@@ -51,6 +56,9 @@ const Navbar = ({ setDarkMode, darkMode }) => {
         </div>
 
         <div className="navbar-links__container">
+          <Link to="/about">
+            <p>About</p>
+          </Link>
           <Link to="/projects">
             <p>Projects</p>
           </Link>
@@ -87,6 +95,8 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                   darkMode ? "navbar-menu__links" : "navbar-menu__links_light"
                 }
               >
+                <p onClick={handleAbout}>About</p>
+
                 <p onClick={handleProjects}>Projects</p>
 
                 <p onClick={handleBlogs}>Blogs</p>

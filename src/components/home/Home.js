@@ -1,12 +1,17 @@
 import React from "react";
 import "./home.css";
-import picko from "../../img/photo.png";
+import picko_dark from "../../img/photo_dark.png";
+import picko_light from "../../img/photo_light.png";
 
 const Home = ({ darkMode }) => {
   return (
     <div className={darkMode ? "homeBody_dark" : "homeBody_light"}>
       <div className="col1">
-        <img className="picko" src={picko} alt="picko" />
+        <img
+          className="picko"
+          src={darkMode ? picko_dark : picko_light}
+          alt="picko"
+        />
         <h3 style={{ textAlign: "center" }}>
           I’m a web developer from Batangas Philippines. I love building
           reactive and responsive website using the latest technologies

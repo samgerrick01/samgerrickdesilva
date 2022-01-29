@@ -1,0 +1,40 @@
+.about__title {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Arvo", serif;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.about__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.about__content1 {
+  font-size: 2em;
+  margin: 30px;
+}
+.about__content1 span {
+  font-weight: 800;
+  animation: sam 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes sam {
+  0% {
+  }
+  50% {
+    color: red;
+  }
+  100% {
+  }
+}
+.about__content2 {
+  font-size: 2em;
+  margin: 30px;
+}
+.about__content3 {
+  font-size: 2em;
+  margin: 30px;
+}

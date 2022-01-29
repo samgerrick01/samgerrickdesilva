@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Contact, Home, Navbar, Projects, Blogs } from "./components";
+import { Contact, Home, Navbar, Projects, Blogs, About } from "./components";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -14,6 +14,7 @@ function App() {
           <Routes>
             <Route path="/" exact element={<Home darkMode={darkMode} />} />
             <Route path="/projects" exact element={<Projects />} />
+            <Route path="/about" exact element={<About />} />
             <Route path="/blogs" exact element={<Blogs />} />
             <Route
               path="/contact"

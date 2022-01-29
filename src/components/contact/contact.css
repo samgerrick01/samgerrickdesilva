@@ -9,6 +9,7 @@
 .title {
   font-size: 50px;
   text-align: center;
+  font-family: "Arvo", serif;
 }
 
 .form form {
@@ -26,8 +27,12 @@
   height: 40px;
   width: 50%;
   font-size: 20px;
-  background-color: black;
+  background-color: #242424;
   color: white;
+  font-family: "Merriweather Sans", sans-serif;
+  outline: none;
+  border: 0px solid;
+  border-bottom: 2px solid rgb(224, 224, 224);
 }
 
 .user_Name_light,
@@ -36,23 +41,33 @@
   height: 40px;
   width: 50%;
   font-size: 20px;
-  background-color: white;
+  background-color: rgb(230, 230, 230);
   color: black;
+  font-family: "Merriweather Sans", sans-serif;
+  outline: none;
+  border: 0px solid;
+  border-bottom: 2px solid rgb(36, 36, 36);
 }
 
 .user_Message_light {
   height: 200px;
   width: 50%;
-  font-size: 20px;
-  background-color: white;
+  font-size: 25px;
+  background-color: rgb(230, 230, 230);
   color: black;
+  font-family: "Merriweather Sans", sans-serif;
+  border: 2px solid rgb(36, 36, 36);
+  outline: none;
 }
 .user_Message_dark {
   height: 200px;
   width: 50%;
-  font-size: 20px;
-  background-color: black;
+  font-size: 25px;
+  background-color: #242424;
   color: white;
+  font-family: "Merriweather Sans", sans-serif;
+  border: 2px solid rgb(224, 224, 224);
+  outline: none;
 }
 
 .btn_dark {
@@ -60,8 +75,8 @@
   width: 50%;
   border-radius: 15px;
   font-size: 20px;
-  background-color: black;
-  color: white;
+  background-color: rgb(153, 231, 143);
+  color: black;
   cursor: pointer;
 }
 
@@ -70,7 +85,7 @@
   width: 50%;
   border-radius: 15px;
   font-size: 20px;
-  background-color: white;
+  background-color: rgb(153, 231, 143);
   color: black;
   cursor: pointer;
 }
@@ -78,14 +93,16 @@
 @media screen and (max-width: 770px) {
   .user_Name_light,
   .user_Email_light,
-  .user_Phone_light {
+  .user_Phone_light,
+  .user_Message_light {
     font-size: 15px;
     width: 80%;
   }
 
   .user_Name_dark,
   .user_Email_dark,
-  .user_Phone_dark {
+  .user_Phone_dark,
+  .user_Message_dark {
     font-size: 15px;
     width: 80%;
   }

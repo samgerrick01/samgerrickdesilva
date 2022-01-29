@@ -42,7 +42,7 @@ const Contact = ({ darkMode }) => {
 
   return (
     <div className="body">
-      <h1 className="title">Send an Email</h1>
+      <h1 className="title">Get in touch</h1>
       <div className="form">
         <form ref={form} onSubmit={sendEmail}>
           <input
@@ -73,7 +73,7 @@ const Contact = ({ darkMode }) => {
             required="required"
           />
           <textarea
-            name="user_Message"
+            cla="user_Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             className={darkMode ? "user_Message_dark" : "user_Message_light"}
