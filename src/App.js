@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Contact, Home, Navbar, Projects, Blogs, About } from "./components";
+import useLocalStorage from "./components/useLocalStorage";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useLocalStorage("darkMode", false);
   return (
     <Router>
       <div className="App">

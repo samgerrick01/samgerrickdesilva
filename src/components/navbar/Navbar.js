@@ -48,7 +48,11 @@ const Navbar = ({ setDarkMode, darkMode }) => {
           <span style={{ color: darkMode ? "grey" : "yellow" }}>☀</span>
           <div className="switch__checkbox">
             <label className="switch">
-              <input type="checkbox" onChange={() => setDarkMode(!darkMode)} />
+              <input
+                type="checkbox"
+                onChange={() => setDarkMode(!darkMode)}
+                defaultChecked={darkMode}
+              />
               <span className="slider round"> </span>
             </label>
           </div>
