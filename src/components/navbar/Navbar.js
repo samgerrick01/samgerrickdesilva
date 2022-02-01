@@ -56,7 +56,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
               <span className="slider round"> </span>
             </label>
           </div>
-          <span style={{ color: darkMode ? "#c96dfd" : "grey" }}>☽</span>
+          <span style={{ color: darkMode ? "#c96dfd" : "grey" }}> ☽</span>
         </div>
 
         <div className="navbar-links__container">

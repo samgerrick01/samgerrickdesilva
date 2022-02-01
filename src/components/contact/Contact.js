@@ -73,7 +73,7 @@ const Contact = ({ darkMode }) => {
             required="required"
           />
           <textarea
-            cla="user_Message"
+            name="user_Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             className={darkMode ? "user_Message_dark" : "user_Message_light"}
